@@ -150,3 +150,15 @@ function cambiarSlide() {
 }
 
 setInterval(cambiarSlide, 3000); // cambia cada 3 segundos
+
+function showNotification() {
+  const toast = document.getElementById("cart-toast");
+  
+  // Añadimos la clase 'show' para que aparezca
+  toast.className = "cart-notification show";
+  
+  // Después de 3 segundos (lo que dura la animación), quitamos la clase
+  setTimeout(function(){ 
+    toast.className = toast.className.replace("show", ""); 
+  }, 3000);
+}
