@@ -57,7 +57,7 @@
 
       <div class="disponibilidad agotado"><span>❌ Agotado</span></div>
 
-      <button onclick="agregarAlCarrito(this)" class="btn2">Agregar al carrito</button>
+      <button onclick="agregarAlCarrito(this), showNotification()" class="btn2">Agregar al carrito</button>
     </div>
 
     <div class="producto" data-categoria="niña" data-diseño="vestidos">
@@ -71,7 +71,7 @@
 
       <div class="disponibilidad stock"><span>✅ En stock</span></div>
 
-      <button onclick="agregarAlCarrito(this)" class="btn2">Agregar al carrito</button>
+      <button onclick="agregarAlCarrito(this), showNotification()" class="btn2">Agregar al carrito</button>
     </div>
 
     <div class="producto" data-categoria="niña" data-diseño="vestidos">
@@ -85,7 +85,7 @@
 
       <div class="disponibilidad pocas"><span>⚠️ Pocas unidades</span></div>
 
-      <button onclick="agregarAlCarrito(this)" class="btn2">Agregar al carrito</button>
+      <button onclick="agregarAlCarrito(this), showNotification()" class="btn2">Agregar al carrito</button>
     </div>
 
     <section class="catalogo" id="catalogo">
@@ -101,7 +101,7 @@
 
       <div class="disponibilidad stock"><span>✅ En stock</span></div>
 
-      <button onclick="agregarAlCarrito(this)" class="btn2">Agregar al carrito</button>
+      <button onclick="agregarAlCarrito(this), showNotification()" class="btn2">Agregar al carrito</button>
     </div>
 
   </section>
@@ -119,7 +119,7 @@
 
       <div class="disponibilidad stock"><span>✅ En stock</span></div>
 
-      <button onclick="agregarAlCarrito(this)" class="btn2">Agregar al carrito</button>
+      <button onclick="agregarAlCarrito(this), showNotification()" class="btn2">Agregar al carrito</button>
     </div>
 
   </section>
@@ -160,6 +160,7 @@
 <button class="btn1" onclick="cerrarCarrito()">Cerrar</button>
 </div>
 
+<div id="cart-toast" class="cart-notification">¡Producto añadido al carrito!</div>
 
 
 </body>
